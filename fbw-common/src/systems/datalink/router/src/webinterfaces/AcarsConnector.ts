@@ -45,14 +45,14 @@ export class AcarsConnector {
   public static fansMode: FansMode = FansMode.FansNone;
 
   public static async validate(service: string | AcarsNetwork, value: string): Promise<any> {
-    new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       if (!value || value === '') {
         resolve(value);
       }
 
       const body = {
         logon: value,
-        from: 'HDWA339X',
+        from: 'FBWA32NX',
         to: 'ALL-CALLSIGNS',
         type: 'ping',
         packet: '',
@@ -83,7 +83,6 @@ export class AcarsConnector {
           break;
         default:
           reject(new Error(`Error: Unknown service "${service}"`));
-          return;
       }
     });
   }
