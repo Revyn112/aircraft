@@ -4,7 +4,7 @@
 import { AtsuTimestamp } from './AtsuTimestamp';
 
 export enum AtsuMessageNetwork {
-  Hoppie,
+  ACARS,
   FBW,
 }
 
@@ -45,7 +45,7 @@ export enum AtsuMessageSerializationFormat {
  * Defines the generic ATC message
  */
 export class AtsuMessage {
-  public Network = AtsuMessageNetwork.Hoppie;
+  public Network = AtsuMessageNetwork.ACARS;
 
   public UniqueMessageID: number = -1;
 
