@@ -45,7 +45,7 @@ export class CpdlcMessage extends AtsuMessage {
   constructor() {
     super();
     this.Type = AtsuMessageType.CPDLC;
-    this.Network = AtsuMessageNetwork.Hoppie;
+    this.Network = AtsuMessageNetwork.ACARS;
     this.Direction = AtsuMessageDirection.Downlink;
   }
 

@@ -1,6 +1,7 @@
 //  Copyright (c) 2023 FlyByWire Simulations
 //  SPDX-License-Identifier: GPL-3.0
 
+export * from './AcarsNetwork';
 export * from './AtisMessage';
 export * from './AtsuMessage';
 export * from './AtsuTimestamp';
